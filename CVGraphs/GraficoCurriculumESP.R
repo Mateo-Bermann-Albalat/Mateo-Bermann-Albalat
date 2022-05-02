@@ -1,12 +1,12 @@
-# Cargo la librería
+# Cargo la librerÃ­a
 library(ggplot2)
-# Genero los valores para las cantidades, las habilidades y el relleno del gráfico, respectivamente
+# Genero los valores para las cantidades, las habilidades y el relleno del grÃ¡fico, respectivamente
 Nivel = c(8,7,5,5,3)
-Campo = c("Modelización inferencial",
-                "Modelización predictiva", 
-                "Visualización de datos",
-                "Pruebas estadísticas", 
-                "Integración en entorno de nube")
+Campo = c("ModelizaciÃ³n inferencial",
+                "ModelizaciÃ³n predictiva", 
+                "VisualizaciÃ³n de datos",
+                "Pruebas estadÃ­sticas", 
+                "IntegraciÃ³n en entorno de nube")
 
 fill = c("#82c64d",
          "#17fe14",
@@ -14,10 +14,10 @@ fill = c("#82c64d",
          "#85fec6",
          "#e0fed3")
 perfil = as.data.frame(Nivel, Campo)
-etiquetas = c("Básico", 
+etiquetas = c("BÃ¡sico", 
               "Intermedio", 
               "Experto")
-# Y ya generamos el gráfico
+# Y ya generamos el grÃ¡fico
 grafico <-ggplot(perfil,aes(x = Nivel, y= Campo))+
   scale_y_discrete(limits = Campo)+
   geom_col(width = 0.2, fill = fill, col = "black")+
